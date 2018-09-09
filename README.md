@@ -32,3 +32,8 @@ include 폴더 안에는 화면을 구성하는 css, img, js 등의 static 파�
 
 model과 controller에서 사용되는 객체의 네이밍은 Model 혹은 Model_ModelNameDetail / Controller 혹은 Controller_ControllerNameDetail
 과 같이 _ 로 구분해서 작성
+
+
+.htaccess rewriterule 설정
+http://127.0.0.1/test 는 RewriteRule에 의해
+http://127.0.0.1/index.php?param=test 형태로 변환
