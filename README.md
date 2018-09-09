@@ -4,15 +4,27 @@ MVC 패턴의 간단한 게시판
 /** 폴더 구조 **/
 
 MIA_PHP
-  -app
-    -controller
-    -model
-    -view
-  -config
-  -include
-    -css
-    -img
-    -js
+
+app
+
+>  -controller
+ 
+>  -model
+ 
+>  -view
+ 
+ 
+ 
+config
+
+
+include
+
+>  -css
+  
+>  -img
+  
+>  -js
     
 app 폴더 안에 MVC 폴더 구성
 config 폴더 안에는 애플리케이션이 실행 될 때 필요한 환경설정이 구성되어 있음
