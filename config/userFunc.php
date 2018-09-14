@@ -5,4 +5,7 @@
 		echo "<script>alert('$msg')</script>";
 	}
 
+	function redirectURL($str = false){
+		echo "<script>location.href=".$str."</script>";
+	}
 ?>

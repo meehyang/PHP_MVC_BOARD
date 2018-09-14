@@ -13,15 +13,10 @@
 				break;
 			case 'model': $dir = _MODEL;
 				break;
-			case 'controller': $dir = _CONTROLLER;
-				break;
-			default:
+			default: $dir = _CONTROLLER;
 				break;
 		}
-
-		//객체가 Model, App, Controller처럼 언더바 없이 끝나는 경우는 $classDivide[1]에 $classDivide[0]값을 넣어준다
-		if(!$classDivide[1]) $classDivide[1] = $classDivide[0];
 		//해당 객체명에 대응되는 파일을 불러옵니다.
-		require_once($dir.$classDivide[1]."php");
+		require_once($dir.$classDivide[0].".php");
 	}
 ?>

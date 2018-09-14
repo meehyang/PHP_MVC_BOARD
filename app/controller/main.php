@@ -1,23 +1,18 @@
-<? require_once(_CONFIG."func.php"); ?>
 <?
-	Class Board{
+	class Main{
 		//변수
 		var $param; //화면이 뿌려질 파일 주소
 		var $db;	//model 객체를 담을 인스턴스 변수
 		var $title;
-		var $list;
-
 		// 객체가 생성될 때 생성 시점에 해야할 기능이 있다면 객체 생성 시 인자로 전달해 __construct함수에서 받아 처리함
     function __construct($param){
-			// echo 'view 경로 '.$param->view;
 				$this->param = $param;
-				//모델 객체 생성
-				$this->db = new Model($param);
+				// echo 'view 경로 '.$param->view;
 				$this->index(); //객체 생성과 동시에 처음 보여질 페이지는 list페이지
     }
 
 		function index(){
-			$this->list = $this->db->list;
+			// 사이트 제목
 			$this->getHeader();
 			$this->getContent();
 			$this->getFooter();
